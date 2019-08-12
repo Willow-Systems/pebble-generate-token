@@ -7,12 +7,13 @@ This pebble app simply generates a timeline token, which is displayed on the wat
 
 Generating a timeline token requires an internet connection 
 
-#### Screenshots
-
-<img src="/screenshots/1.jpeg" height="200" width="auto"></img>
-
 #### Installation
 
 Download and install the .pbw file above. When the rebble appstore accepts new apps, I'll upload it there
+
+#### Screenshots
+
+<img src="/screenshots/1.jpeg" height="400" width="auto"></img>
+
 
 
