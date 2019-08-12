@@ -1,0 +1,45 @@
+<html>
+	<head>
+	<style>
+		body {
+			font-family: "Open Sans", "Sans Serif";
+			font-weight: 100;
+			text-align: center;
+			overflow: hide;
+		}
+		.title {
+			font-size: 40px;
+		}
+		.token {
+			margin-top: 10px;
+			font-size: 30px;
+		}
+		.footer {
+			position: absolute;
+			bottom: 0;
+			height: 40px;
+			margin-top: 40px;
+			width: 100%;
+			text-align: center;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="title"> Token: </div>
+		<div class="token" id="token"> Error - Have you generated one in-app yet?</div>
+		<div class="footer"> Willow Systems </div>
+	<script>
+		if (window.location.hash) {
+			var hash = window.location.hash.substring(1);
+			hash = decodeURIComponent(hash);
+			hash = JSON.parse(hash);
+			if (hash.token == null || hash.token == "" || hash.token == "undefined") {
+                                document.getElementById("token").innerHTML = "Open watchapp and generate a token first";
+                        } else {
+                                document.getElementById("token").innerHTML = hash.token;
+                        }
+
+		}
+	</script>
+	</body>
+</html>
