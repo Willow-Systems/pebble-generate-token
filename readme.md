@@ -9,7 +9,7 @@ Generating a timeline token requires an internet connection
 
 #### Screenshots
 
-![Getting the token from the settings page](/screenshots/1.jpeg "Settings Page")
+![Getting the token from the settings page](/screenshots/1.jpeg | height=200)
 
 #### Installation
 
