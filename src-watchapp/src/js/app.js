@@ -13,7 +13,8 @@ landingCard.on('click', function(e) {
   if (e.button == 'select') {
     Pebble.getTimelineToken(function(token) {
       console.log('My timeline token is ' + token);
-      landingCard.body('Token: ' + token);
+      landingCard.subtitle('Token: ' + token);
+      landingCard.body('Open settings in the pebble app to easily copy the token');
       Settings.option("token", token);
     }, function(error) {
       console.log('Error getting timeline token: ' + error);
